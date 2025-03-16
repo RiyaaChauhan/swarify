@@ -1,14 +1,24 @@
+# Ignore Python virtual environment and cache files
 venv/
 .cache
 .env
+__pycache__/
+*.pyc
+
+# Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore logs, temp, and compressed files
 *.log
 *.tmp
 *.zip
 *.rar
+
+# Ignore Node.js dependencies
 node_modules/
+
+# Ignore IDE-specific files
 .vscode/
 .idea/
-*.pyc
-__pycache__/
+
