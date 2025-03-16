@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    environment:
+      - SPOTIPY_CLIENT_ID=your_client_id
+      - SPOTIPY_CLIENT_SECRET=your_client_secret
+      - SPOTIPY_REDIRECT_URI=http://localhost:8888/callback
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - backend

@@ -26,3 +26,4 @@ websockets==13.0.1
 Werkzeug==3.0.4
 youtube-search-python==1.6.6
 yt-dlp==2024.8.6
+gunicorn==21.2.0
