@@ -1,0 +1,17 @@
+{
+    "name": "swarify",
+    "version": "1.0.0",
+    "description": "A web-based application that allows users to download MP3 files from Spotify tracks or playlists by finding corresponding YouTube videos. Built with Flask, integrated with Spotify and YouTube APIs, and deployed using Docker for scalability.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/RiyaaChauhan/Swarify"
+    },  
+    "author": "Riya chauhan",
+    "license": "ISC"
+  }
+  
